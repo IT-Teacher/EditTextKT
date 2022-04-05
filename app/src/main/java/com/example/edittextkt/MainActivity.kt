@@ -9,16 +9,17 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val editText = findViewById<EditText>(R.id.name)
-        val et2 = findViewById<EditText>(R.id.password)
+        val editText = findViewById<TextInputEditText>(R.id.et1)
+        val et2 = findViewById<TextInputEditText>(R.id.et2)
 
-        val button = findViewById<Button>(R.id.button)
+        val button = findViewById<Button>(R.id.btn1)
 
         val textView = findViewById<TextView>(R.id.tv1)
 
